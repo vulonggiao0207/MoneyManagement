@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_margin="5dp"
+    >
+	<TableRow> <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_weight="100"
+            android:layout_gravity="center"
+            android:gravity="center"   
+            android:layout_span="2"
+            android:background="#116493"
+            android:textColor="#ffffff"/>
+	</TableRow>
+    <TableRow>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" 
+        android:layout_weight="99">
+
+        <requestFocus />
+    </EditText>
+    </TableRow>
+ </TableLayout>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_margin="5dp"
+    
+    >
+
+    <TableRow>
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="100"/>        
+    </TableRow>
+ </TableLayout>
+    <TableLayout  android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_margin="5dp"
+    >
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note:"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_weight="10"/>
+
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="12" 
+            android:layout_weight="99"
+            android:maxLength="12"/>
+             
+    </TableRow>
+</TableLayout>
+<TableLayout  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_margin="5dp"
+    >
+    <TableRow>
+        <Button
+            android:layout_span="2"
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK" 
+            android:layout_weight="5"
+            android:layout_gravity="center"            
+            />
+         
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_span="2"
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel" 
+            android:layout_weight="5"
+            android:layout_gravity="center"            
+            />         
+    </TableRow>
+</TableLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"  
+        android:background="#e3f3f8"
+         android:layout_margin="5dp">
+        <ListView
+           
+            android:id="@+id/recordListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true"
+            android:scrollbars="vertical">
+        </ListView>
+    </LinearLayout>       
+   
+</LinearLayout>

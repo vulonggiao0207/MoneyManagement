@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MoneyManagement</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="remove_array" >
+        <item >Phone</item>
+        <item >Shopping</item>
+        <item >Transport</item>
+         <item >Car</item>
+        <item >Medical</item>
+        <item >Care</item>
+        <item >Drink</item>
+        <item >Food</item>
+        <item >House</item>
+        <item >Tuition</item>
+    </string-array>
+     <string-array name="add_array" >
+        <item >Salary</item>
+        <item >Deposit</item>
+        <item >Gift</item>        
+    </string-array>
+</resources>
